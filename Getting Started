@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>RBXe-Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">RBXe-Framework</h1>
+      <h2 class="project-tagline"></h2>
+      <button type="button"><a href="http://ebkr.github.io/RBXe-Framework/">Home</a></button> <br>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="home" class="anchor" href="#home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Light</h3>
+<p>
+RBXe Game Framework is a way of including all your popularly well used functions, and other extras to make developing easier in one little package.
+<br>
+While it is not currently available, this page is reserved as a placeholder.
+<br> <br>
+Basic usage: <br>
+<pre><code class="codeblock">
+Level = require(SampleID)
+</code></pre>
+<br>
+You can also grab the model here.
+<br>
+This is the method you should use if you need a LocalScript to use my framework.
+<pre><code class="codeblock">
+Level = require(Instance ModuleScript)
+</code></pre>
+<br>
+This is due to ROBLOX not allowing clients to require ModuleScripts by ID, for good reason too.
+<br>
+I do however recommend that you use the framework entirely server side.
+<br> <br>
+Good luck, and enjoy your shorter code!
+</p>
+</section>
+
+  
+  </body>
+</html>
+
