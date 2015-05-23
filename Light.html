@@ -25,9 +25,8 @@ It is intended for use with games which depend on measuring volumes of light.
 <br><br>
 It does however, only work with PointLights, and can't detect obstructions.
 <br> <br>
-Basic usage: <br>
-<pre><code class="codeblock">
-Level = Framework.Light:DetectLevel(Vector3 Position[Optional, Instance Parent __ Defaults to Workspace])
+Basic usage:
+<pre><code class="codeblock">Level = Framework.Light:DetectLevel(Vector3 Position[Optional, Instance Parent __ Defaults to Workspace])
 </code></pre>
 <br>
 It is recommended to use DetectLight in Regions. Using recursion through the entire workspace can cause excessive lag in larger games.
