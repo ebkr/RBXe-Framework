@@ -23,16 +23,14 @@
 <p>
 The Event framework is extremely useful when working with multiple scripts to prevent loops, and an over-flow of instances, increasing load times.
 <br> <br>
-Basic usage:
+Basic usage: <br> </p>
+<code>
 MyEvent = Framework.Events:Create("Test")
-<br>
-MyEvent:connect(function(msg) <br>
+MyEvent:connect(function(msg)
   print(msg) <br>
 end)
-<br>
 Framework.Events:Fire("Test", "Hello World")
-<br>
-</p>
+</code>
 </section>
 
   
