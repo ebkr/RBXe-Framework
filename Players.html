@@ -23,7 +23,7 @@ The Players framework contains a few functions that could prove helpful. <br>
 (From the last update of this page, it contains 2 functions.)
 </p>
 
-<h4 style="color:rgb(0,50,200)"><a id="home" class="anchor" href="#OnTeam" aria-hidden="true"><span class="octicon octicon-link"></span></a>OnTeam</h4>
+<h4 style="color:rgb(0,50,200)"><a id="OnTeam" class="anchor" href="#OnTeam" aria-hidden="true"><span class="octicon octicon-link"></span></a>OnTeam</h4>
 <p>
   OnTeam returns a list of all players on a specific team. <br>
 Basic usage:
@@ -32,7 +32,7 @@ Basic usage:
 <br>
 </p>
 
-<h4 style="color:rgb(0,50,200)"><a id="home" class="anchor" href="#Spawned" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spawned</h4>
+<h4 style="color:rgb(0,50,200)"><a id="Spawned" class="anchor" href="#Spawned" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spawned</h4>
 <p>
 Spawned returns a list of all players with a currently spawned character. <br>
 Basic usage:
@@ -41,11 +41,20 @@ Basic usage:
 <br>
 </p>
 
-<h4 style="color:rgb(0,50,200)"><a id="home" class="anchor" href="#ToolEquipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spawned</h4>
+<h4 style="color:rgb(0,50,200)"><a id="ToolEquipped" class="anchor" href="#ToolEquipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToolEquipped</h4>
 <p>
 Returns the current tool equipped by the specified Player or Character. <br>
 Basic usage:
 <pre><code class="codeblock">HoldingTool = Framework.Players:ToolEquipped(Instance Player or Instance Model)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Respawn" class="anchor" href="#Respawn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Respawn</h4>
+<p>
+Can respawn all players in a table. If the table parameter isn't added, it defaults to all players. <br>
+Basic usage:
+<pre><code class="codeblock">Framework.Players:Respawn(Optional Player Table)
 </code></pre>
 <br>
 </p>
