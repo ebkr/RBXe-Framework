@@ -21,21 +21,56 @@
 <a id="home" class="anchor" href="#home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Events</h3>
 <p>
 The Event framework is extremely useful when working with multiple scripts to prevent loops, and an over-flow of instances, increasing load times.
-<br> <br>
+<br>
+</p>
+<h4 style="color:rgb(0,50,200)"><a id="Create" class="anchor" href="#OnTeam" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create</h4>
+<p>
+The Create method takes one argument, and returns the event.
 Basic usage:
-<pre><code class="codeblock">MyEvent = Framework.Events:Create("Test")
-
-MyEvent:connect(function(msg)
-  print(msg)
-end)
-
-Framework.Events:Fire("Test", "Hello World")
+<pre><code class="codeblock">MyEvent = Framework.Events:Create(String Name)
 </code></pre>
 <br>
 </p>
-</section>
 
-  
+<h4 style="color:rgb(0,50,200)"><a id="Fire" class="anchor" href="#Fire" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fire</h4>
+<p>
+The Fire method has one required argument, and can have as many extra arguments as you feel like.
+Basic usage:
+<pre><code class="codeblock">Framework.Events:Fire(String Name (Name used in :Create()), [Args, ...] )
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Connection" class="anchor" href="#Connection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Connection</h4>
+<p>
+For your events to actually do something, you'll need to connect them. The syntax should make you feel comfortable. It can be connected in two ways.
+Basic usage:
+<pre><code class="codeblock">MyEvent:connect(function)
+</code></pre>
+<br>
+Or it can be connected like so:
+<pre><code class="codeblock">MyEvent:connect(function(Args)
+-- Do stuff
+end)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Combine" class="anchor" href="#Combine" aria-hidden="true"><span class="octicon octicon-link"></span></a>Combine</h4>
+<p>
+So, now that you know how it all works, it's time to put it all together.
+<pre><code class="codeblock">MyEvent = Framework.Events:Create("Test")
+
+MyEvent:connect(function(text)
+  print(text)
+end)
+
+Framework.Events:Fire("Test", "Hello World!")
+</code></pre>
+<br>
+</p>
+
+</section>
   </body>
 </html>
 
