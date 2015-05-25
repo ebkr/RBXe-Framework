@@ -27,6 +27,8 @@ The Event framework is extremely useful when working with multiple scripts to pr
 <h4 style="color:rgb(0,50,200)"><a id="Create" class="anchor" href="#OnTeam" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create</h4>
 <p>
 The Create method takes one argument, and returns the event. <br>
+Create can be called as many times as you like, with the same name and will return the relevant event. <br>
+This can be especially useful in LocalScripts to prevent breaking. <br>
 Basic usage:
 <pre><code class="codeblock">MyEvent = Framework.Events:Create(String Name)
 </code></pre>
