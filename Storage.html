@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>RBXe-Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">RBXe-Framework</h1>
+      <h2 class="project-tagline"></h2>
+      <button type="button"><a href="http://ebkr.github.io/RBXe-Framework/">Home</a></button> <br>
+    </section>
+<section class="main-content">
+<a href="#OnTeam">OnTeam</a>
+<h3><a id="home" class="anchor" href="#home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Storage</h3>
+<p>
+The Storage framework can store all information inside specific keys.
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Get" class="anchor" href="#Get" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get</h4>
+<p>
+Gets the stored value. <br>
+Basic usage:
+<pre><code class="codeblock">Stored = Framework.Storage:Get(String Key)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Set" class="anchor" href="#Set" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set</h4>
+<p>
+Sets the key to the specified value. <br>
+Basic usage:
+<pre><code class="codeblock">Stored = Framework.Storage:Set(String Key, Any Value)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="ToolEquipped" class="anchor" href="#ToolEquipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToolEquipped</h4>
+<p>
+Returns the current tool equipped by the specified Player or Character. <br>
+Basic usage:
+<pre><code class="codeblock">HoldingTool = Framework.Players:ToolEquipped(Instance Player or Instance Model)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="Respawn" class="anchor" href="#Respawn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Respawn</h4>
+<p>
+Can respawn all players in a table. If the table parameter isn't added, it defaults to all players. <br>
+Basic usage:
+<pre><code class="codeblock">Framework.Players:Respawn(Optional Player Table)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="ApplyFunction" class="anchor" href="#Applyfunction" aria-hidden="true"><span class="octicon octicon-link"></span></a>ApplyFunction</h4>
+<p>
+Will apply a function to all player's in a table, if no table is specified, will default to all. <br>
+Basic usage:
+<pre><code class="codeblock">function MyFunc(Player)
+print(Player.Name)
+end
+  
+Framework.Players:ApplyFunction(MyFunc [, Optional Player Table])
+</code></pre>
+<br>
+</p>
+
+</section>
+  </body>
+</html>
+
