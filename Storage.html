@@ -16,7 +16,7 @@
       <button type="button"><a href="http://ebkr.github.io/RBXe-Framework/">Home</a></button> <br>
     </section>
 <section class="main-content">
-<a href="#OnTeam">OnTeam</a>
+<a href="#Get">Get</a>, <a href="#Set">Set</a>
 <h3><a id="home" class="anchor" href="#home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Storage</h3>
 <p>
 The Storage framework can store all information inside specific keys.
@@ -37,37 +37,6 @@ Basic usage:
 Sets the key to the specified value. <br>
 Basic usage:
 <pre><code class="codeblock">Stored = Framework.Storage:Set(String Key, Any Value)
-</code></pre>
-<br>
-</p>
-
-<h4 style="color:rgb(0,50,200)"><a id="ToolEquipped" class="anchor" href="#ToolEquipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToolEquipped</h4>
-<p>
-Returns the current tool equipped by the specified Player or Character. <br>
-Basic usage:
-<pre><code class="codeblock">HoldingTool = Framework.Players:ToolEquipped(Instance Player or Instance Model)
-</code></pre>
-<br>
-</p>
-
-<h4 style="color:rgb(0,50,200)"><a id="Respawn" class="anchor" href="#Respawn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Respawn</h4>
-<p>
-Can respawn all players in a table. If the table parameter isn't added, it defaults to all players. <br>
-Basic usage:
-<pre><code class="codeblock">Framework.Players:Respawn(Optional Player Table)
-</code></pre>
-<br>
-</p>
-
-<h4 style="color:rgb(0,50,200)"><a id="ApplyFunction" class="anchor" href="#Applyfunction" aria-hidden="true"><span class="octicon octicon-link"></span></a>ApplyFunction</h4>
-<p>
-Will apply a function to all player's in a table, if no table is specified, will default to all. <br>
-Basic usage:
-<pre><code class="codeblock">function MyFunc(Player)
-print(Player.Name)
-end
-  
-Framework.Players:ApplyFunction(MyFunc [, Optional Player Table])
 </code></pre>
 <br>
 </p>
