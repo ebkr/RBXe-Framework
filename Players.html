@@ -17,6 +17,7 @@
     </section>
 <section class="main-content">
 <a href="#OnTeam">OnTeam</a>, <a href="#Spawned">Spawned</a>, <a href="#ToolEquipped">ToolEquipped</a>, <a href="#Respawn">Respawn</a>
+<a href="#ApplyFunction">ApplyFunction</a>
 <h3><a id="home" class="anchor" href="#home" aria-hidden="true"><span class="octicon octicon-link"></span></a>Players</h3>
 <p>
 The Players framework contains a few functions that could prove helpful.
@@ -55,6 +56,19 @@ Basic usage:
 Can respawn all players in a table. If the table parameter isn't added, it defaults to all players. <br>
 Basic usage:
 <pre><code class="codeblock">Framework.Players:Respawn(Optional Player Table)
+</code></pre>
+<br>
+</p>
+
+<h4 style="color:rgb(0,50,200)"><a id="ApplyFunction" class="anchor" href="#Applyfunction" aria-hidden="true"><span class="octicon octicon-link"></span></a>ApplyFunction</h4>
+<p>
+Will apply a function to all player's in a table, if no table is specified, will default to all. <br>
+Basic usage:
+<pre><code class="codeblock">function MyFunc(Player)
+print(Player.Name)
+end
+  
+Framework.Players:ApplyFunction(MyFunc [, Optional Player Table])
 </code></pre>
 <br>
 </p>
